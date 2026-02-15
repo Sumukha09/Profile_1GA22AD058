@@ -30,8 +30,7 @@ I utilized AI agents to accelerate development, debug issues, and optimize perfo
 
 ### **Challenge: Mobile Performance Bottleneck**
 **The Bug/Issue:**
-The initial mobile performance score on Lighthouse was significantly low . The main thread was being blocked for too long, causing a poor user experience on lower-end devices. The "Time to Interactive" (TTI) and "Total Blocking Time" (TBT) metrics were high due to large JavaScript bundles and expensive CSS effects.
-
+The initial mobile performance score on Lighthouse was significantly low . The main thread was being blocked for too long, causing a poor user experience on lower-end devices.
 **The Fix:**
 I implemented a multi-faceted optimization strategy:
 
