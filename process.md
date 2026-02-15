@@ -1,7 +1,6 @@
 # Process Flow Documentation
 
 ## 1. Architecture
-**Why did you choose your specific folder structure?**
 
 The project follows a standard **Vite + React** architecture, chosen for its performance, modularity, and scalability.
 
@@ -27,7 +26,7 @@ I utilized AI agents to accelerate development, debug issues, and optimize perfo
 
 
 ## 3. Challenges
-**Mention one specific bug you faced and how you fixed it.**
+
 
 ### **Challenge: Mobile Performance Bottleneck**
 **The Bug/Issue:**
