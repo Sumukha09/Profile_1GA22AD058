@@ -1,7 +1,6 @@
 # Process Flow Documentation
 
 ## 1. Architecture
-**Why did you choose your specific folder structure?**
 
 The project follows a standard **Vite + React** architecture, chosen for its performance, modularity, and scalability.
 
@@ -27,7 +26,7 @@ I utilized AI agents to accelerate development, debug issues, and optimize perfo
 
 
 ## 3. Challenges
-**Mention one specific bug you faced and how you fixed it.**
+
 
 ### **Challenge: Mobile Performance Bottleneck**
 **The Bug/Issue:**
@@ -42,5 +41,4 @@ I implemented a multi-faceted optimization strategy:
 2.  **CSS Performance (Backdrop Filter)**:
     I discovered that the `backdrop-filter: blur()` effect was extremely resource-intensive on mobile GPUs. I implemented a conditional check to disable this effect on mobile devices, significantly improving rendering performance without compromising the core visual identity.
 
-**Result:**
-These changes reduced the initial load time and improved the interactivity metrics, moving the performance score towards the target of 90+.
+
