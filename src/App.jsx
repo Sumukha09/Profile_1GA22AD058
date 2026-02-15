@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useState, useEffect } from 'react';
+import React, { Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 
@@ -16,27 +16,16 @@ const PageLoader = () => (
 );
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoaded(true);
-    }, 1500);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="min-h-screen bg-background font-sans antialiased text-primary selection:bg-primary selection:text-white">
       <Navbar />
       <Hero />
-      {isLoaded && (
-        <Suspense fallback={<div className="py-20 text-center text-primary/40">Loading...</div>}>
-          <Techstack />
-          <Projects />
-          <Publications />
-          <Footer />
-        </Suspense>
-      )}
+      <Suspense fallback={<PageLoader />}>
+        <Techstack />
+        <Projects />
+        <Publications />
+        <Footer />
+      </Suspense>
     </div>
   );
 }
