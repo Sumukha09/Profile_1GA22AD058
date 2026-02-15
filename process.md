@@ -41,5 +41,4 @@ I implemented a multi-faceted optimization strategy:
 2.  **CSS Performance (Backdrop Filter)**:
     I discovered that the `backdrop-filter: blur()` effect was extremely resource-intensive on mobile GPUs. I implemented a conditional check to disable this effect on mobile devices, significantly improving rendering performance without compromising the core visual identity.
 
-**Result:**
-These changes reduced the initial load time and improved the interactivity metrics, moving the performance score towards the target of 90+.
+
