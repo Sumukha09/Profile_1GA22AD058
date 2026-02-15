@@ -22,15 +22,7 @@ const Hero = () => {
                     Currently building systems using React, Python, and computer vision
                 </p>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                    <Button
-                        variant="primary"
-                        className="h-16 px-6 sm:px-10 text-lg shadow-xl shadow-primary/20"
-                        onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
-                        View Projects
-                    </Button>
-
-                </div>
+                
             </div>
         </section>
     );
